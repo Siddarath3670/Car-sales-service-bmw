@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 03, 2024 at 07:57 AM
+-- Generation Time: Mar 25, 2024 at 08:12 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -63,16 +63,17 @@ CREATE TABLE `booking` (
 --
 
 INSERT INTO `booking` (`customername`, `phone`, `bookingamount`, `bookingdate`, `deliverydate`, `employeeid`, `status`, `id`, `carid`) VALUES
-('Wazid', '9113545025', 1000000, '2024-02-08', '2024-02-27', 1, 'delivered', 1, 1),
-('Siddarath', '9740990085', 8500000, '2024-02-05', '2024-02-14', 1, 'delivered', 2, 2),
-('William ', '6989653625', 100000, '2024-02-21', '2024-03-21', 5, 'delivered', 7, 5),
-('Neha', '5698785412', 100000, '2024-01-25', '2024-03-21', 8, 'delivered', 8, 5),
-('Ishika', '7896541236', 50000, '2024-03-01', '0000-00-00', 2, 'delivered', 9, 5),
-('Arjun', '8965322145', 70000, '2024-03-02', '0000-00-00', 9, 'pending', 10, 4),
-('Akash', '8796324512', 600000, '2024-03-01', '2024-03-02', 8, 'delivered', 11, 5),
-('Daniel Martinez', '896532452', 696969, '2024-03-02', '0000-00-00', 2, 'pending', 12, 3),
-('Brian Thompson', '3621894589', 300000, '2024-02-29', '0000-00-00', 2, 'pending', 13, 5),
-('Chota Bheem', '8965315496', 2100000, '2024-03-02', '0000-00-00', 9, 'Pending', 14, 1);
+('Wazid', '9113545025', 1000000, '2024-02-08', '2024-02-27', 1, 'delivered', 1, 6),
+('Siddarath', '9740990085', 8500000, '2024-02-05', '2024-02-14', 1, 'delivered', 2, 8),
+('William ', '6989653625', 100000, '2024-02-21', '2024-03-21', 5, 'delivered', 7, 9),
+('Neha', '5698785412', 100000, '2024-01-25', '2024-03-21', 8, 'delivered', 8, 10),
+('Ishika', '7896541236', 50000, '2024-03-01', '0000-00-00', 2, 'delivered', 9, 11),
+('Arjun', '8965322145', 70000, '2024-03-02', '0000-00-00', 9, 'pending', 10, 9),
+('Akash', '8796324512', 600000, '2024-03-01', '2024-03-02', 8, 'delivered', 11, 7),
+('Daniel Martinez', '896532452', 696969, '2024-03-02', '0000-00-00', 2, 'pending', 12, 6),
+('Brian Thompson', '3621894589', 300000, '2024-02-29', '0000-00-00', 2, 'pending', 13, 8),
+('Chota Bheem', '8965315496', 2100000, '2024-03-02', '0000-00-00', 9, 'Pending', 14, 9),
+('Sameer', '8310087784', 80000, '2024-03-21', '0000-00-00', 9, 'pending', 15, 10);
 
 -- --------------------------------------------------------
 
@@ -101,7 +102,12 @@ CREATE TABLE `car` (
 --
 
 INSERT INTO `car` (`modelname`, `type`, `carimage`, `price`, `color`, `stock`, `description`, `chassisno`, `engineno`, `sideview`, `interior`, `rearview`, `id`) VALUES
-('X7', 'SUV', 'Car_image_1708861269778.png', 9000000, 'red', 9, 'Nothing special', 'SB1280', 9185, 'sideView_1708861269780.png', 'interior_1708861269785.png', 'rearView_1708861269790.png', 5);
+('X1', 'SUV', 'carimage_1711022406684.png', 4950000, 'Alphine White', 10, 'Xquisite', '1000', 2000, 'sideview_1711022406686.jpg', 'interior_1711022406692.jpg', 'rearview_1711022406697.jpg', 6),
+('X3', 'SUV', 'carimage_1711082302638.png', 6850000, 'Mineral White Metallic', 15, 'Xcelerate', '1001', 2001, 'sideview_1711082302641.jpg', 'interior_1711082302645.jpg', 'rearview_1711082302650.jpg', 7),
+('X5', 'SUV', 'carimage_1711082386365.png', 9600000, 'Phytonic Blue', 10, 'Xpand', '1002', 2002, 'sideview_1711082386366.jpg', 'interior_1711082386368.jpg', 'rearview_1711082386369.webp', 8),
+('X7', 'SUV', 'carimage_1711082460166.png', 14800000, 'Dravit Grey Metallic', 20, 'Xclusive', '1003', 2003, 'sideview_1711082460168.png', 'interior_1711082460184.jpg', 'rearview_1711082460186.jpg', 9),
+('M2 Competi', 'SEDAN', 'carimage_1711082521053.png', 12700000, 'M Zandvoort Blue', 15, 'Xhilarate', '1004', 2004, 'sideview_1711082521054.jpg', 'interior_1711082521061.jpg', 'rearview_1711082521063.jpg', 10),
+('M4 Competi', 'SEDAN', 'carimage_1711082573330.png', 14800000, ' Sao Paulo Yellow Metallic', 25, 'Xpertise', '1005', 2005, 'sideview_1711082573330.jpg', 'interior_1711082573331.jpg', 'rearview_1711082573332.jpg', 11);
 
 -- --------------------------------------------------------
 
@@ -126,7 +132,9 @@ INSERT INTO `customer` (`name`, `phone`, `address`, `licencenumber`, `password`,
 ('Siddarath', '9740990085', 'Hanuman Nagar', 'ka22 2022', '123456789', 4),
 ('Sameer Nadaf', '8310087784', 'Belagavi', 'KA22202897', '123456789', 9),
 ('Akash', '8796324512', 'Belagavi', 'KA22202526', '123456', 12),
-('Hritik', '9632215478', 'Belagavi', 'KA22202589', '123456', 13);
+('Hritik', '9632215478', 'Belagavi', 'KA22202589', '123456', 13),
+('aaaaaa', '9740990085', 'asdsa', 'ka22', 'asdfgh', 15),
+('123', 'abc', 'bgm', 'ka22', '123456', 16);
 
 -- --------------------------------------------------------
 
@@ -189,7 +197,8 @@ INSERT INTO `services` (`registrationnumber`, `customername`, `phone`, `servicet
 ('MH 09 HK 5698', 'Apex', '8978645562', 'Major Service', '2024-02-29', '2024-03-02', 'Wheel bearings and shock absorbers changed ', 50000, 'true', 7),
 ('KA 22 Z 8965', 'Nitin', '8965327845', 'Periodic Sevice', '2024-03-01', '2024-03-01', 'Radiator and coolant hose checked', 10000, 'true', 8),
 ('KA 25 JK 6325', 'John', '3216549632', 'Body Shop', '2024-02-01', '2024-03-01', 'Bumpers, damaged body panels Replaced', 100000, 'false', 9),
-('KA 01 HG 8978', 'Sumit', '3021560696', 'Periodic Sevice', '2024-02-28', '2024-02-29', 'Engine Mounts repaired', 25000, 'false', 10);
+('KA 01 HG 8978', 'Sumit', '3021560696', 'Periodic Sevice', '2024-02-28', '2024-02-29', 'Engine Mounts repaired', 25000, 'false', 10),
+('wqe34', 'aaaaaa', '9113535254', 'General', '2024-03-21', '0000-00-00', '', 0, 'false', 11);
 
 -- --------------------------------------------------------
 
@@ -280,19 +289,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `car`
 --
 ALTER TABLE `car`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `employee`
@@ -304,7 +313,7 @@ ALTER TABLE `employee`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `spares`
